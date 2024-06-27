@@ -103,202 +103,198 @@
             <div class="row">
               <div class="col-sm-7">
                 <div class="form-group">
-                  <label>Nomor Pendaftaran :</label>
+                  <label>Nama Lengkap :</label>
                   <input
                     type="text"
                     name="no. pendaftaran"
                     class="form-control"
                     placeholder=""
-                    readonly
                   />
-                </div>
-              </div>
-              <div class="col-sm-7">
-                <div class="form-group">
-                  <label>Tanggal Pendaftaran :</label>
-                  <input
-                    type="text"
-                    name="tanggal pendaftaran"
-                    class="form-control"
-                    placeholder=""
-                    readonly
-                  />
-                </div>
-              </div>
-              <div class="col-sm-3">
-                <div class="form-group">
-                  <label class="required-label">Lanjut Pendidikan : </label>
-                  <select class="form-control" name="pendidikan">
-                    <option disabled selected>Pilih</option>
-                    <option value="SD">SD</option>
-                    <option value="SMP">SMP</option>
-                  </select>
                 </div>
               </div>
               <div class="row">
                 <div class="col-sm-7">
                   <div class="form-group">
-                    <label class="required-label">Nama Lengkap :</label>
+                    <label>Jenis Kelamin :</label>
                     <input
                       type="text"
-                      name="nama"
+                      name="no. pendaftaran"
                       class="form-control"
-                      placeholder="Masukkan Nama Lengkap"
-                    />
-                  </div>
-                </div>
-                <div class="col-sm-5">
-                  <div class="form-group">
-                    <label class="required-label"
-                      >Nomor Induk Siswa Nasional (NISN) :</label
-                    >
-                    <input
-                      type="text"
-                      name="nisn"
-                      class="form-control"
-                      placeholder="Masukkan Nomor NISN"
-                    />
-                  </div>
-                </div>
-              </div>
-              <div class="row">
-                <div class="col-sm-4">
-                  <div class="form-group">
-                    <label class="required-label">Tempat Lahir :</label>
-                    <input
-                      type="text"
-                      name="tempat_lahir"
-                      class="form-control"
-                      placeholder="Masukkan Tempat Lahir"
-                    />
-                  </div>
-                </div>
-                <div class="col-sm-3">
-                  <div class="form-group">
-                    <label class="required-label">Tanggal Lahir :</label>
-                    <input
-                      type="date"
-                      name="tanggal_lahir"
-                      class="form-control"
-                    />
-                  </div>
-                </div>
-              </div>
-              <div class="row">
-                <div class="col-sm-4">
-                  <div class="form-group">
-                    <label class="required-label">Jenis Kelamin :</label>
-                    <br />
-                    <input type="radio" name="jk" value="Laki-Laki" /> Laki-Laki
-                    <br />
-                    <input type="radio" name="jk" value="Perempuan" /> Perempuan
-                  </div>
-                </div>
-                <div class="col-sm-3">
-                  <div class="form-group">
-                    <label class="required-label">Agama :</label>
-                    <select class="form-control" name="agama">
-                      <option disabled selected>Pilih</option>
-                      <option value="Islam">Islam</option>
-                      <option value="Kristen">Kristen</option>
-                      <option value="Katolik">Katolik</option>
-                      <option value="Hindu">Hindu</option>
-                      <option value="Budha">Budha</option>
-                      <option value="Budha">Konghucu</option>
-                      <option value="Lainnya">Lainnya</option>
-                    </select>
-                  </div>
-                </div>
-                <div class="col-sm-4">
-                  <div class="form-group">
-                    <label class="required-label">Kewarganegaraan :</label>
-                    <br />
-                    <input type="radio" name="kwn" value="WNI" /> Warga Negara
-                    Indonesia (WNI)
-                    <br />
-                    <input type="radio" name="kwn" value="WNA" /> Warga Negara
-                    Asing (WNA)
-                  </div>
-                </div>
-              </div>
-              <div class="row">
-                <div class="col-sm-4">
-                  <div class="form-group">
-                    <label>E-mail Orangtua/Wali :</label>
-                    <input
-                      type="email"
-                      name="email"
-                      class="form-control"
-                      placeholder="Masukkan E-mail"
-                    />
-                    <input
-                      type="text"
-                      name="nama_pemegang_email"
-                      class="form-control"
-                      placeholder="Masukkan Nama Pemegang Email"
-                    />
-                  </div>
-                </div>
-                <div class="col-sm-3">
-                  <div class="form-group">
-                    <label class="required-label"
-                      >Nomor Whatsapp Orangtua/Wali :</label
-                    >
-                    <input
-                      type="text"
-                      name="no_hp"
-                      class="form-control"
-                      placeholder="Masukkan Nomor Whatsapp"
-                    /><br />
-                    <input
-                      type="text"
-                      name="nama_pemegang_nomor_whatsapp"
-                      class="form-control"
-                      placeholder="Masukkan Nama Pemegang Nomor Whatsapp"
-                    />
-                  </div>
-                </div>
-              </div>
-              <br />
-
-              <div class="alert alert-secondary">
-                <strong>DATA ALAMAT DOMISILI</strong>
-              </div>
-              <div class="row">
-                <div class="col-sm-6">
-                  <div class="form-group">
-                    <label class="required-label">Alamat Rumah :</label>
-                    <textarea
-                      class="form-control"
-                      name="alamat_rumah"
-                      rows="2"
-                      id="alamat"
-                    ></textarea>
-                  </div>
-                </div>
-                <div class="col-sm">
-                  <div class="form-group">
-                    <label class="required-label">Provinsi :</label>
-                    <input
-                      type="text"
-                      name="provinsi"
-                      class="form-control"
-                      placeholder="Masukkan Provinsi"
-                    />
-                  </div>
-                </div>
-                <div class="col-sm">
-                  <div class="form-group">
-                    <label class="required-label">Kabupaten/Kota :</label>
-                    <input
-                      type="text"
-                      name="kabupaten"
-                      class="form-control"
-                      placeholder="Masukkan Kabupaten/Kota"
+                      placeholder=""
                     />
                   </div>
                 </div>
                 <div class="row">
+                  <div class="col-sm-7">
+                  </div>
+                  <div class="col-sm-5">
+                    <div class="form-group">
+                      <label class="required-label"
+                        >Nomor Induk Siswa Nasional (NISN) :</label
+                      >
+                      <input
+                        type="text"
+                        name="nisn"
+                        class="form-control"
+                        placeholder="Masukkan Nomor NISN"
+                      />
+                    </div>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-sm-7">
+                  </div>
+                  <div class="col-sm-5">
+                    <div class="form-group">
+                      <label class="required-label"
+                        >Nomor Induk Kependudukan (NIK/No.kitas) :</label
+                      >
+                      <input
+                        type="text"
+                        name="nisn"
+                        class="form-control"
+                        placeholder="Masukkan Nomor NIK"
+                      />
+                    </div>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-sm-7">
+                  </div>
+                  <div class="col-sm-5">
+                    <div class="form-group">
+                      <label class="required-label"
+                        >Kartu Keluarga (KK) :</label
+                      >
+                      <input
+                        type="text"
+                        name="nisn"
+                        class="form-control"
+                        placeholder="Masukkan KK"
+                      />
+                    </div>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-sm-4">
+                    <div class="form-group">
+                      <label class="required-label">Tempat Lahir :</label>
+                      <input
+                        type="text"
+                        name="tempat_lahir"
+                        class="form-control"
+                        placeholder="Masukkan Tempat Lahir"
+                      />
+                    </div>
+                  </div>
+                  <div class="col-sm-3">
+                    <div class="form-group">
+                      <label class="required-label">Tanggal Lahir :</label>
+                      <input
+                        type="date"
+                        name="tanggal_lahir"
+                        class="form-control"
+                      />
+                    </div>
+                  </div>
+                  <div class="col-sm-3">
+                    <div class="form-group">
+                      <label class="required-label">No Registrasi Akte :</label>
+                      <input
+                        type="text"
+                        name="no_registrasi akte"
+                        class="form-control"
+                      />
+                    </div>
+                  </div>
+                  <div class="col-sm-3">
+                    <div class="form-group">
+                      <label class="required-label">Agama :</label>
+                      <select class="form-control" name="agama">
+                        <option disabled selected>Pilih</option>
+                        <option value="Islam">Islam</option>
+                        <option value="Kristen">Kristen</option>
+                        <option value="Katolik">Katolik</option>
+                        <option value="Hindu">Hindu</option>
+                        <option value="Budha">Budha</option>
+                        <option value="Budha">Konghucu</option>
+                        <option value="Lainnya">Lainnya</option>
+                      </select>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-sm-4">
+                      <div class="form-group">
+                        <label class="required-label">Kewarganegaraan :</label>
+                        <br />
+                        <input type="text" name="kwn" value="" /> 
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-sm-4">
+                      <div class="form-group">
+                        <label class="required-label">Berkebutuhan Khusus :</label>
+                        <br />
+                        <input type="text" name="kwn" value="" /> 
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-sm-6">
+                    <div class="form-group">
+                      <label class="required-label">Alamat/jalan :</label>
+                      <textarea
+                        class="form-control"
+                        name="alamat_rumah"
+                        rows="2"
+                        id="alamat"
+                      ></textarea>
+                    </div>
+                  </div>
+                  <div class="col-sm-6">
+                    <div class="form-group">
+                      <label class="required-label">RT :</label>
+                      <textarea
+                        class="form-control"
+                        name="RT"
+                        rows="2"
+                        id="RT"
+                      ></textarea>
+                    </div>
+                  </div>
+                  <div class="col-sm-6">
+                    <div class="form-group">
+                      <label class="required-label">RW :</label>
+                      <textarea
+                        class="form-control"
+                        name="RW"
+                        rows="2"
+                        id="RW"
+                      ></textarea>
+                    </div>
+                  </div>
+                  <div class="col-sm-6">
+                    <div class="form-group">
+                      <label class="required-label">Nama Dusun :</label>
+                      <textarea
+                        class="form-control"
+                        name="nama dusun"
+                        rows="2"
+                        id="nama_dusun"
+                      ></textarea>
+                    </div>
+                  </div>
+                  <div class="col-sm">
+                    <div class="form-group">
+                      <label class="required-label">Nama Kelurahan/Desa :</label>
+                      <input
+                        type="text"
+                        name="kelurahan"
+                        class="form-control"
+                        placeholder="Masukkan Kelurahan"
+                      />
+                    </div>
+                  </div>
                   <div class="col-sm">
                     <div class="form-group">
                       <label class="required-label">Kecamatan :</label>
@@ -310,60 +306,361 @@
                       />
                     </div>
                   </div>
-                </div>
-                <div class="row">
-                  <div class="col-sm">
+                  <div class="col-sm-2">
                     <div class="form-group">
-                      <label class="required-label">Kelurahan :</label>
+                      <label class="required-label">Kode Pos :</label>
                       <input
                         type="text"
-                        name="kelurahan"
+                        name="kode_pos"
                         class="form-control"
-                        placeholder="Masukkan Kelurahan"
+                        placeholder="Kode Pos"
                       />
                     </div>
                   </div>
-                </div>
-                <div class="col-sm-2">
-                  <div class="form-group">
-                    <label class="required-label">Kode Pos :</label>
-                    <input
-                      type="text"
-                      name="kode_pos"
-                      class="form-control"
-                      placeholder="Kode Pos"
-                    />
+                  <div class="col-sm-2">
+                    <div class="form-group">
+                      <label class="required-label">Tempat Tinggal :</label>
+                      <input
+                        type="text"
+                        name="tempat tinggal"
+                        class="form-control"
+                        placeholder="tempat tinggal"
+                      />
+                    </div>
                   </div>
+              <div class="col-sm-7">
+                <div class="form-group">
+                  <label>Mode Transportasi :</label>
+                  <input
+                    type="text"
+                    name="mode transportasi"
+                    class="form-control"
+                    placeholder=""
+                  />
                 </div>
               </div>
+              <div class="col-sm-2">
+                <div class="form-group">
+                  <label class="required-label">Anak ke- :</label>
+                  <input
+                    type="text"
+                    name="anak ke-"
+                    class="form-control"
+                    placeholder="anak ke-"
+                  />
+                </div>
+              </div>
+            </div>
               <br />
               <div class="alert alert-secondary">
-                <strong>DATA PENDIDIKAN TERAKHIR</strong>
+                <strong>DATA AYAH KANDUNG</strong>
               </div>
               <div id="education-container">
                 <div class="education-entry">
                   <div class="col-sm-3">
                     <div class="form-group">
-                      <label class="required-label">Jenjang Pendidikan :</label>
-                      <select class="form-control" name="pendidikan">
-                        <option disabled selected>Pilih</option>
-                        <option value="SD">TK</option>
-                        <option value="SMP">SD</option>
-                      </select>
+                      <label class="required-label">Nama Ayah Kandung :</label>
+                      <input
+                        type="text"
+                        name="ayah kandung"
+                        class="form-control"
+                        placeholder="Masukkan Nama Ayah Kandung"
+                      />
                     </div>
                   </div>
                   <div class="row">
                     <div class="col-sm-3">
                       <div class="form-group">
-                        <label class="required-label">Asal Sekolah :</label>
+                        <label class="required-label">NIK AYAH :</label>
+                        <input
+                          type="text"
+                          name="NIK AYAH"
+                          class="form-control"
+                          placeholder="Masukkan NIK"
+                        />
+                      </div>
+                    </div>
+                    <div class="col-sm-3">
+                      <div class="form-group">
+                        <label class="required-label">Tanggal Lahir :</label>
+                        <input
+                          type="date"
+                          name="tanggal lahir"
+                          class="form-control"
+                          placeholder="Masukkan Tanggal Lahir"
+                        />
+                      </div>
+                    </div>
+                    <div class="col-sm-3">
+                      <div class="form-group">
+                        <label class="required-label">Pendidikan Terakhir :</label>
                         <input
                           type="text"
                           name="asal_sekolah"
                           class="form-control"
-                          placeholder="Masukkan Asal Sekolah"
+                          placeholder="Masukkan Pendidikan terakhir"
                         />
                       </div>
                     </div>
+                    <div class="col-sm-3">
+                      <div class="form-group">
+                        <label class="required-label">Pekerjaan :</label>
+                        <input
+                          type="text"
+                          name="pekerjaan"
+                          class="form-control"
+                          placeholder="Masukkan Pekerjaan"
+                        />
+                      </div>
+                    </div>
+                    <div class="col-sm-3">
+                      <div class="form-group">
+                        <label class="required-label">Penghasilan :</label>
+                        <input
+                          type="text"
+                          name="asal_sekolah"
+                          class="form-control"
+                          placeholder="Masukkan Nominal Penghasilan"
+                        />
+                      </div>
+                    </div>
+                    <div class="col-sm-3">
+                      <div class="form-group">
+                        <label class="required-label">No Telepon :</label>
+                        <input
+                          type="text"
+                          name="asal_sekolah"
+                          class="form-control"
+                          placeholder="Masukkan No Telepon"
+                        />
+                      </div>
+                    </div>
+                    <br>
+                    <div class="alert alert-secondary">
+                      <strong>DATA IBU KANDUNG</strong>
+                    </div>
+                    <div id="education-container">
+                      <div class="education-entry">
+                        <div class="col-sm-3">
+                          <div class="form-group">
+                            <label class="required-label">Nama Ibu Kandung :</label>
+                            <input
+                              type="text"
+                              name="ibu kandung"
+                              class="form-control"
+                              placeholder="Masukkan Nama ibu Kandung"
+                            />
+                          </div>
+                        </div>
+                        <div class="row">
+                          <div class="col-sm-3">
+                            <div class="form-group">
+                              <label class="required-label">NIK IBU :</label>
+                              <input
+                                type="text"
+                                name="NIK IBU"
+                                class="form-control"
+                                placeholder="Masukkan NIK"
+                              />
+                            </div>
+                          </div>
+                          <div class="col-sm-3">
+                            <div class="form-group">
+                              <label class="required-label">Tanggal Lahir :</label>
+                              <input
+                                type="date"
+                                name="tanggal lahir"
+                                class="form-control"
+                                placeholder="Masukkan Tanggal Lahir"
+                              />
+                            </div>
+                          </div>
+                          <div class="col-sm-3">
+                            <div class="form-group">
+                              <label class="required-label">Pendidikan Terakhir :</label>
+                              <input
+                                type="text"
+                                name="asal_sekolah"
+                                class="form-control"
+                                placeholder="Masukkan Pendidikan terakhir"
+                              />
+                            </div>
+                          </div>
+                          <div class="col-sm-3">
+                            <div class="form-group">
+                              <label class="required-label">Pekerjaan :</label>
+                              <input
+                                type="text"
+                                name="pekerjaan"
+                                class="form-control"
+                                placeholder="Masukkan Pekerjaan"
+                              />
+                            </div>
+                          </div>
+                          <div class="col-sm-3">
+                            <div class="form-group">
+                              <label class="required-label">Penghasilan :</label>
+                              <input
+                                type="text"
+                                name="asal_sekolah"
+                                class="form-control"
+                                placeholder="Masukkan Nominal Penghasilan"
+                              />
+                            </div>
+                          </div>
+                          <div class="col-sm-3">
+                            <div class="form-group">
+                              <label class="required-label">No Telepon :</label>
+                              <input
+                                type="text"
+                                name="asal_sekolah"
+                                class="form-control"
+                                placeholder="Masukkan No Telepon"
+                              />
+                            </div>
+                          </div>
+                          <br>
+                          <div class="alert alert-secondary">
+                            <strong>DATA WALI MURID</strong>
+                          </div>
+                          <div id="education-container">
+                            <div class="education-entry">
+                              <div class="col-sm-3">
+                                <div class="form-group">
+                                  <label class="required-label">Nama Wali :</label>
+                                  <input
+                                    type="text"
+                                    name="wali"
+                                    class="form-control"
+                                    placeholder="Masukkan Nama wali"
+                                  />
+                                </div>
+                              </div>
+                              <div class="row">
+                                <div class="col-sm-3">
+                                  <div class="form-group">
+                                    <label class="required-label">NIK Wali :</label>
+                                    <input
+                                      type="text"
+                                      name="NIK wali"
+                                      class="form-control"
+                                      placeholder="Masukkan NIK"
+                                    />
+                                  </div>
+                                </div>
+                                <div class="col-sm-3">
+                                  <div class="form-group">
+                                    <label class="required-label">Tanggal Lahir :</label>
+                                    <input
+                                      type="date"
+                                      name="tanggal lahir"
+                                      class="form-control"
+                                      placeholder="Masukkan Tanggal Lahir"
+                                    />
+                                  </div>
+                                </div>
+                                <div class="col-sm-3">
+                                  <div class="form-group">
+                                    <label class="required-label">Pendidikan Terakhir :</label>
+                                    <input
+                                      type="text"
+                                      name="asal_sekolah"
+                                      class="form-control"
+                                      placeholder="Masukkan Pendidikan terakhir"
+                                    />
+                                  </div>
+                                </div>
+                                <div class="col-sm-3">
+                                  <div class="form-group">
+                                    <label class="required-label">Pekerjaan :</label>
+                                    <input
+                                      type="text"
+                                      name="pekerjaan"
+                                      class="form-control"
+                                      placeholder="Masukkan Pekerjaan"
+                                    />
+                                  </div>
+                                </div>
+                                <div class="col-sm-3">
+                                  <div class="form-group">
+                                    <label class="required-label">Penghasilan :</label>
+                                    <input
+                                      type="text"
+                                      name="asal_sekolah"
+                                      class="form-control"
+                                      placeholder="Masukkan Nominal Penghasilan"
+                                    />
+                                  </div>
+                                </div>
+                                <div class="col-sm-3">
+                                  <div class="form-group">
+                                    <label class="required-label">No Telepon :</label>
+                                    <input
+                                      type="text"
+                                      name="asal_sekolah"
+                                      class="form-control"
+                                      placeholder="Masukkan No Telepon"
+                                    />
+                                  </div>
+                                </div>
+                                <br>
+                                <div class="alert alert-secondary">
+                                  <strong>DATA RINCIAN PESERTA DIDIK</strong>
+                                </div>
+                                <div id="education-container">
+                                  <div class="education-entry">
+                                    <div class="col-sm-3">
+                                      <div class="form-group">
+                                        <label class="required-label">Nomer Telepon Rumah :</label>
+                                        <input
+                                          type="text"
+                                          name="telepon rumah"
+                                          class="form-control"
+                                          placeholder="Masukkan Nomer telepon rumah"
+                                        />
+                                      </div>
+                                    </div>
+                                    <div class="row">
+                                      <div class="col-sm-3">
+                                        <div class="form-group">
+                                          <label class="required-label">HP :</label>
+                                          <input
+                                            type="text"
+                                            name="HP"
+                                            class="form-control"
+                                            placeholder="Masukkan NOMOR HP"
+                                          />
+                                        </div>
+                                      </div>
+                                      <br>
+                                      <div class="alert alert-secondary">
+                                        <strong>DATA IBU KANDUNG</strong>
+                                      </div>
+                                      <div id="education-container">
+                                        <div class="education-entry">
+                                          <div class="col-sm-3">
+                                            <div class="form-group">
+                                              <label class="required-label">Nama Ibu Kandung :</label>
+                                              <input
+                                                type="text"
+                                                name="ibu kandung"
+                                                class="form-control"
+                                                placeholder="Masukkan Nama ibu Kandung"
+                                              />
+                                            </div>
+                                          </div>
+                                          <div class="row">
+                                            <div class="col-sm-3">
+                                              <div class="form-group">
+                                                <label class="required-label">NIK IBU :</label>
+                                                <input
+                                                  type="text"
+                                                  name="NIK IBU"
+                                                  class="form-control"
+                                                  placeholder="Masukkan NIK"
+                                                />
+                                              </div>
+                                            </div>
                     <div class="row">
                       <div class="col-sm-6">
                         <div class="form-group">
