@@ -38,12 +38,12 @@
   </head>
   
   <body>
-    <div class="header">
+    <div class="header" id="header">
       <p>TEKUN DAN DISIPLIN DEMI TERCAPAINYA CITA-CITA</p>
     </div>
 
     <!-- TopBar -->
-    <header>
+    <header id="topbar">
       <div class="container">
         <div class="row">
           <div class="col-md-8">
@@ -63,7 +63,7 @@
     </header>
 
     <!-- Navbar Start -->
-    <nav class="navbar">
+    <nav class="navbar" id="navbar">
       <div class="navbar-nav">
         <a href="index.html">HOME</a>
         <a href="tentang-sekolah.html">TENTANG SEKOLAH </a>
@@ -108,7 +108,7 @@
                     type="text"
                     name="no. pendaftaran"
                     class="form-control"
-                    placeholder="No.Pendaftaran Diisi Oleh Pihak Sekolah"
+                    placeholder=""
                     readonly
                   />
                 </div>
@@ -120,7 +120,7 @@
                     type="text"
                     name="tanggal pendaftaran"
                     class="form-control"
-                    placeholder="Tanggal Pendaftaran Diisi Oleh Pihak Sekolah"
+                    placeholder=""
                     readonly
                   />
                 </div>
@@ -606,7 +606,7 @@
     <!-- PPDB Section End -->
 
     <!-- Footer Start -->
-<footer>
+<footer id="footer">
   <div class="footer">
     <div class="logo-bawah">
       <h3>YAYASAN SERUNI PUTIH</h3>
@@ -688,6 +688,36 @@
     <!-- My Javascript -->
     <script src="script-ppdb.js"></script>
     <script>
+      async function saveFormAsPDF() {
+        // Hide elements
+        document.getElementById('header').style.display = 'none';
+        document.getElementById('topbar').style.display = 'none';
+        document.getElementById('navbar').style.display = 'none';
+        document.getElementById('footer').style.display = 'none';
+
+        // Hide placeholders
+        document.querySelectorAll('input::placeholder').forEach(el => el.style.display = 'none');
+
+        // Take screenshot
+        const form = document.getElementById('ppdb');
+        const canvas = await html2canvas(form);
+        const imgData = canvas.toDataURL('image/png');
+        const pdf = new jspdf.jsPDF();
+        pdf.addImage(imgData, 'PNG', 10, 10);
+        pdf.save('formulir-ppdb.pdf');
+
+        // Show elements again
+        document.getElementById('header').style.display = 'block';
+        document.getElementById('topbar').style.display = 'block';
+        document.getElementById('navbar').style.display = 'block';
+        document.getElementById('footer').style.display = 'block';
+
+        // Show placeholders
+        document.querySelectorAll('input::placeholder').forEach(el => el.style.display = 'block');
+      }
+    </script>
+
+    <script>
       function pagePrint(form){
         var printdata=document.getElementById("form");
         newwin=window.open("");
@@ -729,6 +759,7 @@
       });
   }
 </script>
+
 
   </body>
 </html>

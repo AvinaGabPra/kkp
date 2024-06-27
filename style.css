@@ -259,14 +259,14 @@ body {
 .sd .row .content h2 {
   font-size: 1.8rem;
   margin-bottom: 1rem;
-  margin-left: 0;
+  margin-left: 65px;
 }
 
 .sd .row .content p {
   margin-bottom: 0rem;
   font-size: 1.2rem;
   font-weight: 400;
-  margin-left: 0;
+  margin-left: 65px;
 }
 
 .sd .row .content .isi p {
