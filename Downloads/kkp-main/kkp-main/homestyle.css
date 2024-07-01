@@ -1,0 +1,121 @@
+/* Body */
+body {
+  background-color: #fff;
+  margin: 0;
+  padding: 0;
+  font-family: "Koh Santepheap Regular", times new roman; /* Menetapkan jenis font default */
+}
+
+/* Header */
+.header {
+  background-color: #28282b;
+  height: 70px;
+  width: 100%;
+  text-align: center;
+  line-height: 70px;
+  overflow: hidden;
+}
+
+.header p {
+  margin: 0;
+  color: #fff;
+  font-size: 12px; /* Ubah ukuran teks header sesuai keinginan */
+  animation: moveText 35s linear infinite;
+}
+
+@keyframes moveText {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+/* Container */
+.container {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 20px;
+  position: relative;
+}
+
+/* Responsiveness for screens with a maximum width of 768px */
+@media (max-width: 768px) {
+  .container {
+    padding: 0 10px;
+  }
+
+  .header {
+    height: auto;
+  }
+
+  .header p {
+    line-height: 1.5; /* Set line height for mobile */
+  }
+
+  .judul {
+    font-size: 20px; /* Decrease font size for mobile */
+    margin-left: 150px; /* Adjust left margin for mobile */
+    margin-top: -75px;
+    text-shadow: 1px 3.5px 1px rgba(0, 0, 0, 0.15); /* Efek bayangan: horizontal-offset vertical-offset blur-radius color */
+  }
+
+  .alamatheader {
+    font-size: 8px; /* Decrease font size for mobile */
+    margin-top: 0; /* Remove top margin for mobile */
+    margin-left: 132px; /* Adjust left margin for mobile */
+    margin-top: -12px;
+    position: relative; /* Reset position */
+  }
+
+  .alamatheader2 {
+    font-size: 8px; /* Decrease font size for mobile */
+    margin-top: 0; /* Remove top margin for mobile */
+    margin-left: 130px; /* Adjust left margin for mobile */
+    margin-top: -6px;
+    position: relative; /* Reset position */
+  }
+
+  .logo {
+    width: 100px; /* Decrease logo width for mobile */
+    margin-left: 20px; /* Adjust left margin for mobile */
+    margin-top: 10px; /* Adjust top margin for mobile */
+    position: relative; /* Reset position */
+  }
+}
+
+/* Aturan CSS untuk versi desktop (lebar layar > 768px) */
+@media (min-width: 769px) {
+  .header p {
+    font-size: 18px; /* Set font size for desktop */
+  }
+
+  .judul {
+    font-size: 70px; /* Set font size for desktop */
+    margin-left: 380px; /* Adjust left margin for desktop */
+    margin-top: 70px; /* Adjust top margin for desktop */
+    text-shadow: 1px 3.5px 1px rgba(0, 0, 0, 0.15); /* Efek bayangan: horizontal-offset vertical-offset blur-radius color */
+  }
+
+  .alamatheader,
+  .alamatheader2 {
+    font-size: 18px; /* Set font size for desktop */
+    margin-top: -50px; /* Adjust top margin for desktop */
+    margin-left: 255px; /* Adjust left margin for desktop */
+  }
+
+  .alamatheader2 {
+    margin-top: -15px; /* Adjust top margin for desktop */
+    margin-left: 250px; /* Adjust left margin for desktop */
+  }
+
+  .logo {
+    width: 250px; /* Set logo width for desktop */
+    margin-left: 20px; /* Adjust left margin for desktop */
+    margin-top: 20px; /* Adjust top margin for desktop */
+    position: absolute; /* Reset position */
+    left: 20px; /* Adjust left position for desktop */
+    top: 20px; /* Adjust top position for desktop */
+  }
+}
