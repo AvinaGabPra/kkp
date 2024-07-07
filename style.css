@@ -802,13 +802,13 @@ p {
   display: flex;
   flex-wrap: wrap;
   background-color: #3a719e;
+  object-fit: cover;
 }
 
 .map {
   flex: 1 1 45rem;
   width: 100%;
   object-fit: cover;
-  overflow: auto;
 }
 
 .garis-footer {
