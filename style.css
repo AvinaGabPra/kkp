@@ -978,107 +978,107 @@ p {
     font-size: 0.9rem;
     margin-left: 20px;
   }
-}
 
-/* Banner */
-.banner {
-  display: flex;
-  width: 100%;
-  transition: 5s;
-}
+  /* Banner */
+  .banner {
+    display: flex;
+    width: 100%;
+    transition: 5s;
+  }
 
-.banner img {
-  width: 100%;
-  position: relative;
-}
+  .banner img {
+    width: 100%;
+    position: relative;
+  }
 
-.wrapper {
-  width: 450px;
-  margin: auto;
-  border-radius: 1px;
-  overflow: hidden;
-  position: relative;
-}
+  .wrapper {
+    width: 450px;
+    margin: auto;
+    border-radius: 1px;
+    overflow: hidden;
+    position: relative;
+  }
 
-#slide-1:target ~ .banner {
-  margin-left: 0px;
-}
-#slide-2:target ~ .banner {
-  margin-left: -100%;
-}
+  #slide-1:target ~ .banner {
+    margin-left: 0px;
+  }
+  #slide-2:target ~ .banner {
+    margin-left: -100%;
+  }
 
-/* sambutan kepsek */
-.sambutan-kepsek h3 {
-  padding: 2rem 9% 1.4rem;
-  color: #111;
-}
+  /* sambutan kepsek */
+  .sambutan-kepsek h3 {
+    padding: 2rem 9% 1.4rem;
+    color: #111;
+  }
 
-.sambutan-kepsek .rec {
-  width: 10.6%;
-  height: 6px;
-  background-color: var(--primary);
-  display: block;
-  margin-left: 41.5px;
-  margin-top: -11px;
-  margin-bottom: 40px;
-}
+  .sambutan-kepsek .rec {
+    width: 10.6%;
+    height: 6px;
+    background-color: var(--primary);
+    display: block;
+    margin-left: 41.5px;
+    margin-top: -11px;
+    margin-bottom: 40px;
+  }
 
-.sambutan-kepsek .sd .row .sks-img img {
-  height: 150px;
-  width: 140px;
-  /* Selisih 10px */
-}
+  .sambutan-kepsek .sd .row .sks-img img {
+    height: 150px;
+    width: 140px;
+    /* Selisih 10px */
+  }
 
-.sd .row {
-  display: flex;
-  align-items: flex-start; /* Align items to the start to prevent stretching */
-}
+  .sd .row {
+    display: flex;
+    align-items: flex-start; /* Align items to the start to prevent stretching */
+  }
 
-.sd .row .sks-img {
-  flex: 0 0 auto; /* Prevent flexbox from stretching the image container */
-}
+  .sd .row .sks-img {
+    flex: 0 0 auto; /* Prevent flexbox from stretching the image container */
+  }
 
-.float-sd {
-  float: left; /* Mengatur gambar float ke kiri */
-  margin-right: 1rem; /* Jarak antara gambar dan teks */
-}
+  .float-sd {
+    float: left; /* Mengatur gambar float ke kiri */
+    margin-right: 1rem; /* Jarak antara gambar dan teks */
+  }
 
-.sd .row .sks-img img {
-  width: auto; /* Sesuaikan dengan ukuran gambar */
-  height: auto;
-  margin-left: 41.5px;
-  float: left; /* Membuat gambar float ke kiri */
-  margin-right: 1rem; /* Menambahkan jarak antara gambar dan teks */
-  margin-bottom: 1rem; /* Menambahkan ruang di bawah gambar */
-}
+  .sd .row .sks-img img {
+    width: auto; /* Sesuaikan dengan ukuran gambar */
+    height: auto;
+    margin-left: 41.5px;
+    float: left; /* Membuat gambar float ke kiri */
+    margin-right: 1rem; /* Menambahkan jarak antara gambar dan teks */
+    margin-bottom: 1rem; /* Menambahkan ruang di bawah gambar */
+  }
 
-.sd .row .content {
-  flex: 1; /* Memungkinkan konten untuk mengambil sisa ruang */
-  padding: 0 1rem;
-}
+  .sd .row .content {
+    flex: 1; /* Memungkinkan konten untuk mengambil sisa ruang */
+    padding: 0 1rem;
+  }
 
-.sd .row .content h2 {
-  font-size: 1.8rem;
-  margin-bottom: 1rem;
-  margin-left: 35px; /* Menyesuaikan margin kiri */
-}
+  .sd .row .content h2 {
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+    margin-left: 35px; /* Menyesuaikan margin kiri */
+  }
 
-.sd .row .content p {
-  font-size: 1.2rem;
-  font-weight: 400;
-  margin-left: 35px; /* Menyesuaikan margin kiri */
-  margin-top: 0.5rem; /* Menambahkan jarak atas untuk paragraf berikutnya */
-}
+  .sd .row .content p {
+    font-size: 1.2rem;
+    font-weight: 400;
+    margin-left: 35px; /* Menyesuaikan margin kiri */
+    margin-top: 0.5rem; /* Menambahkan jarak atas untuk paragraf berikutnya */
+  }
 
-.sd .row .content .isi p {
-  text-align: justify;
-  margin-bottom: 0.8rem; /* Menambahkan jarak bawah antara paragraf */
-  font-size: 0.9rem;
-  font-weight: 300;
-  line-height: 1.6;
-  margin-right: 3.5rem; /* Menyesuaikan margin kanan */
-}
+  .sd .row .content .isi p {
+    text-align: justify;
+    margin-bottom: 0.8rem; /* Menambahkan jarak bawah antara paragraf */
+    font-size: 0.9rem;
+    font-weight: 300;
+    line-height: 1.6;
+    margin-right: 3.5rem; /* Menyesuaikan margin kanan */
+  }
 
-.content p:first-of-type {
-  margin-top: 0;
+  .content p:first-of-type {
+    margin-top: 0;
+  }
 }
