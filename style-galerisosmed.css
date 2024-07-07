@@ -1,0 +1,303 @@
+:root {
+  --primary: #4682b4; /*variable*/
+  --bg: #f5f5f5;
+  --figura: #cccc00;
+  --hover: #3724a1;
+  --kotak-abu: #e6e6e6;
+  --font-black: #333;
+  --sd: #ff1919;
+  --smp: #3d82bb;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  border: none;
+  text-decoration: none;
+}
+
+body {
+  font-family: "Koh Santepheap", times;
+  background-color: var(--bg);
+  color: var(--font-black);
+}
+
+/* Header */
+.header {
+  background-color: #28282b;
+  height: 50px;
+  width: 100%;
+  text-align: center;
+  line-height: 50px;
+  overflow: hidden;
+}
+
+.header p {
+  letter-spacing: 1px;
+  margin: 0;
+  color: #fff;
+  font-size: 12px; /* Ubah ukuran teks header sesuai keinginan */
+  animation: moveText 35s linear infinite;
+}
+
+@keyframes moveText {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+/* Topbar */
+.topbar {
+  color: var(--font-black);
+  padding: 10px 20px;
+}
+
+.navbar {
+  position: relative;
+  color: #fff;
+  padding: 10px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar.nav-sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+.navbar-extra {
+  margin-left: auto;
+}
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.logo img {
+  width: 17%;
+  height: auto;
+  margin-right: 50px; /* Spasi antara logo dan teks */
+  margin-top: 40px;
+  margin-bottom: 40px;
+  margin-left: 70px;
+}
+
+.logo-info {
+  display: flex;
+  flex-direction: column;
+}
+
+.logo h1 {
+  font-size: 4rem;
+  font-weight: 700;
+  margin-left: 55px;
+}
+
+.logo p {
+  font-size: 0.9rem;
+  margin-left: 160px;
+}
+
+/* Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.3rem 9.5%;
+  background-color: rgb(70, 130, 180);
+  color: rgb(245, 245, 245);
+  border-bottom: 5px solid #3a719e;
+
+  top: 10;
+  left: 0;
+  right: 0;
+  z-index: 9999;
+  margin-top: 10px;
+  /* margin top untuk kotak biru menambahkan jarak atas */
+}
+
+.navbar .navbar-nav a {
+  color: rgb(245, 245, 245);
+  display: inline-block;
+  font-size: 1.1rem;
+  margin: 0 0.7rem;
+  padding: 0px 43px;
+  /* padding mengatur posisi tulisan navbar */
+  /* margin atasbawah kirikanan */
+}
+
+.navbar .navbar-nav a:hover {
+  color: var(--hover);
+}
+
+.navbar .navbar-extra a {
+  color: #fff;
+  margin: 0 0.5rem;
+}
+
+.navbar .navbar-extra a:hover {
+  color: var(--hover);
+}
+
+#hamburger-menu {
+  display: none;
+}
+
+/* Sejarah Sekolah */
+.sosial-media h3 {
+  margin-top: 3rem;
+  padding: 2rem 9% 1.4rem;
+  color: #111;
+}
+
+.sosial-media .rec4 {
+  width: 6%;
+  height: 6px;
+  background-color: var(--primary);
+  display: block;
+  margin-left: 120px;
+  margin-top: -20px;
+  margin-bottom: 50px;
+}
+
+.sosial-media .row {
+  margin-left: 120px;
+  flex-wrap: wrap;
+}
+
+.social-item {
+  margin-top: 4rem;
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.social-link {
+  margin-left: 10rem;
+  margin-right: auto;
+  text-decoration: none;
+  color: #000;
+  font-size: 18px;
+}
+
+.social-logo {
+  width: 200px;
+  height: 200px;
+  margin-left: 20px;
+}
+
+.sosial-media .row .social-item a:hover {
+  color: var(--hover);
+}
+
+/* Footer */
+.footer {
+  background-color: var(--primary);
+  padding: 1rem 0;
+  margin-top: 10rem;
+  display: flex;
+  border-top: 5px solid #3a719e;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: flex-start;
+}
+
+.logo-bawah h3 {
+  margin-top: 1rem;
+  color: var(--bg);
+  margin-left: 2rem;
+  font-size: 25px;
+  margin-bottom: 0.4rem;
+}
+
+.logo-bawah p {
+  margin-top: 0.5rem; /* Add some spacing if needed */
+  margin-left: 2rem;
+  padding-left: 0;
+  color: var(--bg);
+}
+
+.kontak-kami {
+  margin-top: 1rem;
+  margin-left: 10.5rem;
+}
+
+.kontak-kami h3 {
+  color: var(--bg);
+  margin: 0;
+  align-items: center;
+  font-size: 25px;
+  margin-bottom: 0.6rem;
+}
+
+.kontak-kami table {
+  margin-top: 0.5rem; /* Add some spacing if needed */
+  margin: 0;
+  padding-left: 0;
+  color: var(--bg);
+}
+
+.kategori-sekolah {
+  margin-top: 1rem;
+  margin-left: 9rem;
+}
+
+.kategori-sekolah h3 {
+  color: var(--bg);
+  margin-right: 2rem;
+  align-items: center;
+  font-size: 25px;
+  margin-bottom: 2rem;
+}
+
+.kategori-sekolah table {
+  margin-top: 0.5rem; /* Add some spacing if needed */
+  margin: 0;
+  padding-left: 0;
+  color: var(--bg);
+}
+
+.footer .g-maps {
+  margin-left: 2rem;
+  margin-right: 2rem;
+  width: 100%;
+  margin-top: 2rem; /* Atur jarak antara elemen footer dan peta */
+  display: flex;
+  flex-wrap: wrap;
+  background-color: #3a719e;
+}
+
+.map {
+  flex: 1 1 45rem;
+  width: 100%;
+  object-fit: cover;
+  overflow: auto;
+}
+
+.garis-footer {
+  display: flex;
+  justify-content: center;
+  margin-top: 2rem;
+  left: 2rem;
+  width: 1285.1px;
+  height: 3px;
+  position: absolute;
+  background-color: rgb(255, 255, 255); /* Warna latar belakang kotak */
+}
+
+.credit {
+  margin-top: 43px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
